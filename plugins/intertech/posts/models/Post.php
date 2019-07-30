@@ -20,4 +20,11 @@ class Post extends Model
      */
     public $rules = [
     ];
+
+    public $belongsTo = [
+        'category' => [
+            'Intertech\Posts\Models\Category',
+            'order' => 'title'
+        ]
+    ];
 }
