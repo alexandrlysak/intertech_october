@@ -21,6 +21,10 @@ class Post extends Model
     public $rules = [
     ];
 
+    public $attachOne = [
+        'image' => 'System\Models\File'
+    ];
+
     public $belongsTo = [
         'category' => [
             'Intertech\Posts\Models\Category',
