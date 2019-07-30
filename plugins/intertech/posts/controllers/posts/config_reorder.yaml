@@ -1,0 +1,4 @@
+title: Posts
+modelClass: Intertech\Posts\Models\Post
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table intertech_posts_'
+    - builder_table_create_intertech_posts_.php
+1.0.3:
+    - 'Created table intertech_posts_categories'
+    - builder_table_create_intertech_posts_categories.php
