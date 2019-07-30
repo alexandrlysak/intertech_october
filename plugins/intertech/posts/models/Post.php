@@ -41,6 +41,12 @@ class Post extends Model
             'Intertech\Posts\Models\Tag',
             'table' => 'intertech_posts_posts_tags',
             'order' => 'title'
+        ],
+
+        'tags' => [
+            'Intertech\Posts\Models\Comment',
+            'table' => 'intertech_posts_posts_comments',
+            'order' => 'id'
         ]
     ];
 }

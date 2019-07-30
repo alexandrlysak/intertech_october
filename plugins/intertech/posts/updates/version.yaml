@@ -21,3 +21,9 @@
 1.0.8:
     - 'Updated table intertech_posts_'
     - builder_table_update_intertech_posts__3.php
+1.0.9:
+    - 'Created table intertech_posts_comments'
+    - builder_table_create_intertech_posts_comments.php
+1.0.10:
+    - 'Created table intertech_posts_posts_comments'
+    - builder_table_create_intertech_posts_posts_comments.php
