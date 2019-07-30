@@ -29,6 +29,10 @@ class Post extends Model
         'category' => [
             'Intertech\Posts\Models\Category',
             'order' => 'title'
+        ],
+
+        'author' => [
+            'Backend\Models\User'
         ]
     ];
 
