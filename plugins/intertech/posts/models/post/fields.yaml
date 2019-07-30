@@ -12,9 +12,35 @@ fields:
             type: slug
         required: 1
         type: text
+    short_description:
+        label: 'Short description'
+        size: ''
+        span: auto
+        type: richeditor
+    full_description:
+        label: 'Full description'
+        size: ''
+        span: auto
+        type: richeditor
     category:
         label: Category
-        span: auto
         nameFrom: title
         descriptionFrom: description
+        span: auto
         type: relation
+    image:
+        label: Image
+        mode: image
+        imageWidth: '200'
+        imageHeight: '200'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    views:
+        label: Views
+        span: auto
+        readOnly: 1
+        type: text
