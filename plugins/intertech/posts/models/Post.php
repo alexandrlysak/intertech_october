@@ -31,4 +31,12 @@ class Post extends Model
             'order' => 'title'
         ]
     ];
+
+    public $belongsToMany = [
+        'tags' => [
+            'Intertech\Posts\Models\Tag',
+            'table' => 'intertech_posts_posts_tags',
+            'order' => 'title'
+        ]
+    ];
 }

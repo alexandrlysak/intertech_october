@@ -18,3 +18,7 @@ navigation:
                 label: Categories
                 url: intertech/posts/categories
                 icon: icon-sitemap
+            tags-menu-item:
+                label: Tags
+                url: intertech/posts/tags
+                icon: icon-tags
