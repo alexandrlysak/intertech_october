@@ -44,3 +44,16 @@ fields:
         span: auto
         readOnly: 1
         type: text
+    tags:
+        label: Tags
+        nameFrom: title
+        descriptionFrom: description
+        span: auto
+        type: relation
+    author:
+        label: Author
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        readOnly: 1
+        type: relation
