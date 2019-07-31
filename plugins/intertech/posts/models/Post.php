@@ -8,7 +8,7 @@ use Model;
 class Post extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
 
     /**
      * @var string The database table used by the model.
@@ -43,7 +43,7 @@ class Post extends Model
             'order' => 'title'
         ],
 
-        'tags' => [
+        'comments' => [
             'Intertech\Posts\Models\Comment',
             'table' => 'intertech_posts_posts_comments',
             'order' => 'id'
