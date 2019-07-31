@@ -1,0 +1,7 @@
+columns:
+    id:
+        label: '#'
+        type: text
+    created_at:
+        label: 'Created at'
+        type: text
