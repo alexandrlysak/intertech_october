@@ -8,6 +8,7 @@ use Model;
 class Post extends Model
 {
     use \October\Rain\Database\Traits\Validation;
+    use \October\Rain\Database\Traits\Sortable;
 
 
     /**
@@ -43,11 +44,11 @@ class Post extends Model
             'order' => 'title'
         ],
 
-//        'comments' => [
-//            'Intertech\Posts\Models\Comment',
-//            'table' => 'intertech_posts_posts_comments',
-//            'order' => 'id'
-//        ]
+        'post_comments' => [
+            'Intertech\Posts\Models\Comment',
+            'table' => 'intertech_posts_posts_comments',
+            'order' => 'id'
+        ]
     ];
 
     public function beforeSave()

@@ -1,4 +1,5 @@
 title: Categories
 modelClass: Intertech\Posts\Models\Category
+nameFrom: title
 toolbar:
     buttons: reorder_toolbar

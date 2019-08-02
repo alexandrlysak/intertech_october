@@ -2,8 +2,12 @@ columns:
     id:
         label: '#'
         type: text
+    content:
+        label: Content
+        type: text
+        searchable: true
+        sortable: true
     created_at:
         label: 'Created at'
         type: text
-        searchable: true
         sortable: true

@@ -45,3 +45,15 @@
 1.0.16:
     - 'Updated table intertech_posts_'
     - builder_table_update_intertech_posts__6.php
+1.0.17:
+    - 'Updated table intertech_posts_categories'
+    - builder_table_update_intertech_posts_categories.php
+1.0.18:
+    - 'Updated table intertech_posts_'
+    - builder_table_update_intertech_posts__7.php
+1.0.19:
+    - 'Updated table intertech_posts_'
+    - builder_table_update_intertech_posts__8.php
+1.0.20:
+    - 'Updated table intertech_posts_categories'
+    - builder_table_update_intertech_posts_categories_2.php

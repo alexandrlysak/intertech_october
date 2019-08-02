@@ -22,11 +22,3 @@ navigation:
                 label: Tags
                 url: intertech/posts/tags
                 icon: icon-tags
-            comments-menu-item:
-                label: Comments
-                url: intertech/posts/comment
-                icon: icon-comments
-            comments_answers-menu-item:
-                label: 'Comments answers'
-                url: intertech/posts/answers
-                icon: icon-stack-exchange

@@ -1,4 +1,5 @@
 title: Posts
 modelClass: Intertech\Posts\Models\Post
+nameFrom: title
 toolbar:
     buttons: reorder_toolbar

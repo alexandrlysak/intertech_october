@@ -57,3 +57,11 @@ fields:
         span: auto
         readOnly: 1
         type: relation
+tabs:
+    fields:
+        comments:
+            label: Comments
+            span: auto
+            type: partial
+            tab: 'Comments'
+            path: post_comments
