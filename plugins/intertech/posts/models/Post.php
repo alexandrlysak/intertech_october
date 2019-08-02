@@ -43,10 +43,23 @@ class Post extends Model
             'order' => 'title'
         ],
 
-        'comments' => [
-            'Intertech\Posts\Models\Comment',
-            'table' => 'intertech_posts_posts_comments',
-            'order' => 'id'
-        ]
+//        'comments' => [
+//            'Intertech\Posts\Models\Comment',
+//            'table' => 'intertech_posts_posts_comments',
+//            'order' => 'id'
+//        ]
     ];
+
+    public function beforeSave()
+    {
+        $this->views = 0;
+        $this->author_id = 0;
+    }
 }
+
+
+ /*
+
+      SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `intertech_october_debian`.`intertech_posts_`.`views` at row 1
+      (SQL: insert into `intertech_posts_` (`title`, `slug`, `short_description`, `full_description`, `category_id`, `views`, `author_id`, `updated_at`, `created_at`) values (Post 1, post-1, <p>Post 1</p>, <p>Post 1</p>, 2, , , 2019-08-01 18:27:29, 2019-08-01 18:27:29))" on line 664 of /home/administrator/PhpstormProjects/intertech_october/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ */
