@@ -1,0 +1,15 @@
+scopes:
+    categories:
+        label: Category
+        modelClass: Intertech\Posts\Models\Category
+        conditions: id in (:filtered)
+        nameFrom: title
+    created_at:
+        label: 'Date range'
+        type: daterange
+        conditions: created_at >= ':after' AND created_at <= ':before'
+    is_enabled:
+        label: 'Is enabled'
+        type: checkbox
+        conditions: is_enabled = true
+
