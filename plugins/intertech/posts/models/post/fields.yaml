@@ -1,67 +1,75 @@
-fields:
-    title:
-        label: Title
-        span: auto
-        required: 1
-        type: text
-    slug:
-        label: Slug
-        span: auto
-        preset:
-            field: title
-            type: slug
-        required: 1
-        type: text
-    short_description:
-        label: 'Short description'
-        size: ''
-        span: auto
-        type: richeditor
-    full_description:
-        label: 'Full description'
-        size: ''
-        span: auto
-        type: richeditor
-    category:
-        label: Category
-        nameFrom: title
-        descriptionFrom: description
-        span: auto
-        type: relation
-    image:
-        label: Image
-        mode: image
-        imageWidth: '200'
-        imageHeight: '200'
-        useCaption: true
-        thumbOptions:
-            mode: crop
-            extension: auto
-        span: auto
-        type: fileupload
-    views:
-        label: Views
-        span: auto
-        readOnly: 1
-        type: text
-    tags:
-        label: Tags
-        nameFrom: title
-        descriptionFrom: description
-        span: auto
-        type: relation
-    author:
-        label: Author
-        nameFrom: name
-        descriptionFrom: description
-        span: auto
-        readOnly: 1
-        type: relation
 tabs:
     fields:
+        title:
+            label: Title
+            span: auto
+            required: 1
+            type: text
+            tab: 'Post data'
+        slug:
+            label: Slug
+            span: auto
+            preset:
+                field: title
+                type: slug
+            required: 1
+            type: text
+            tab: 'Post data'
+        category:
+            label: Category
+            nameFrom: title
+            descriptionFrom: description
+            span: auto
+            type: relation
+            tab: 'Post data'
+        views:
+            label: Views
+            span: auto
+            readOnly: 1
+            type: text
+            tab: 'Post data'
+        image:
+            label: Image
+            mode: image
+            imageWidth: '200'
+            imageHeight: '200'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'Post data'
+        tags:
+            label: Tags
+            nameFrom: title
+            descriptionFrom: description
+            span: auto
+            type: relation
+            tab: 'Post data'
+        short_description:
+            label: 'Short description'
+            size: ''
+            span: auto
+            type: richeditor
+            tab: 'Post data'
+        full_description:
+            label: 'Full description'
+            size: ''
+            span: auto
+            type: richeditor
+            tab: 'Post data'
+        author:
+            label: Author
+            nameFrom: name
+            descriptionFrom: description
+            span: auto
+            readOnly: 1
+            type: relation
+            tab: 'Post data'
         comments:
             label: Comments
             span: auto
             type: partial
-            tab: 'Comments'
+            tab: Comments
             path: post_comments
