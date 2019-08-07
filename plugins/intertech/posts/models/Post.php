@@ -48,12 +48,6 @@ class Post extends Model
             'Intertech\Posts\Models\Comment',
             'table' => 'intertech_posts_posts_comments',
             'order' => 'id'
-        ],
-
-        'comm' => [
-            'Intertech\Posts\Models\Comment',
-            'table' => 'intertech_posts_posts_comments',
-            'order' => 'id'
         ]
     ];
 
