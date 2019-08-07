@@ -2,6 +2,7 @@ post_comments:
     label: Comments
     manage:
         list: $/intertech/posts/models/comment/columns.yaml
+        form: $/intertech/posts/models/comment/fields.yaml
     view:
         list: $/intertech/posts/models/comment/columns.yaml
         toolbarButtons: create|delete

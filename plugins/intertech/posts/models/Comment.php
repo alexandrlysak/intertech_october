@@ -24,14 +24,14 @@ class Comment extends Model
     /**
      * @var array
      */
-    public $belongsToMany = [
-
-        'answers' => [
-            'Intertech\Posts\Models\Answer',
-            'table' => 'intertech_posts_posts_com_answers'
-        ]
-
-    ];
+//    public $belongsToMany = [
+//
+//        'answers' => [
+//            'Intertech\Posts\Models\Answer',
+//            'table' => 'intertech_posts_posts_com_answers'
+//        ]
+//
+//    ];
 
 
 

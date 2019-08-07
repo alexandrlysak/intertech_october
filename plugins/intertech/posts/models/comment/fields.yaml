@@ -1,0 +1,5 @@
+fields:
+    content:
+        label: 'Comment content'
+        span: full
+        type: text

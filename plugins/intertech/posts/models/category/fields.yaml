@@ -1,14 +1,17 @@
-fields:
-    title:
-        label: Title
-        span: auto
-        required: 1
-        type: text
-    slug:
-        label: Slug
-        span: auto
-        required: 1
-        preset:
-            field: title
-            type: slug
-        type: text
+tabs:
+    fields:
+        title:
+            label: Title
+            span: auto
+            required: 1
+            type: text
+            tab: 'Category data'
+        slug:
+            label: Slug
+            span: auto
+            required: 1
+            preset:
+                field: title
+                type: slug
+            type: text
+            tab: 'Category data'

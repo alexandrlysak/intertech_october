@@ -40,13 +40,6 @@ tabs:
             span: auto
             type: fileupload
             tab: 'Post data'
-        tags:
-            label: Tags
-            nameFrom: title
-            descriptionFrom: description
-            span: auto
-            type: relation
-            tab: 'Post data'
         short_description:
             label: 'Short description'
             size: ''
@@ -67,9 +60,27 @@ tabs:
             readOnly: 1
             type: relation
             tab: 'Post data'
+        tags:
+            label: Tags
+            mode: relation
+            separator: comma
+            customTags: 0
+            nameFrom: title
+            useKey: false
+            span: auto
+            type: taglist
+            tab: 'Post data'
+        is_enabled:
+            label: 'Is Enabled'
+            span: auto
+            type: checkbox
+            tab: 'Post data'
         comments:
             label: Comments
             span: auto
             type: partial
             tab: Comments
             path: post_comments
+            manage:
+                list: ~/plugins/october/test/models/comment/columns.yaml
+                form: ~/plugins/october/test/models/comment/fields.yaml

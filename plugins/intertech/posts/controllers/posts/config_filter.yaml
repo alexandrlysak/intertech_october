@@ -1,0 +1,6 @@
+scopes:
+    categories:
+        label: Category
+        modelClass: Intertech\Posts\Models\Category
+        conditions: id in (:filtered)
+        nameFrom: title

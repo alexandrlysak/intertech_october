@@ -11,3 +11,13 @@ columns:
         label: Slug
         type: text
         sortable: true
+    image:
+        label: Image
+        type: partial
+    is_enabled:
+        label: 'Is Enabled'
+        type: switch
+        sortable: true
+    created_at:
+        label: 'Created at'
+        type: datetime
